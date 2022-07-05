@@ -39,7 +39,6 @@ and unzip the dataset.
     We hope the followers could use these support datasets to make a fair comparison between different methods.
 3. Download the pre-train models [here](https://drive.google.com/file/d/1u-e9Dx1aqNZeIWVKL6NXrHCXtY6zbgvm/view?usp=sharing)
 and unzip the checkpoint files.
-and unzip the dataset.
     ```
     tar -xvf save_checkpoints.tar
     ```
