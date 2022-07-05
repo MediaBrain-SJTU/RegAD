@@ -95,6 +95,8 @@ Then you can run the evaluation using:
 python test.py --obj bottle --shot 2 --stn_mode rotation_scale
 ```
 
+Results of few-shot anomaly detection and localization with k=2:
+
 <div style="text-align: center;">
 <table>
 <tr><td>AUC (%)</td> <td colspan="2">Detection</td> <td colspan="2">Localization</td></tr>
@@ -214,6 +216,8 @@ python test.py --obj bottle --shot 2 --stn_mode rotation_scale
 </table>
 </div>
 
+Results of few-shot anomaly detection and localization with k=4:
+
 <div style="text-align: center;">
 <table>
 <tr><td>AUC (%)</td> <td colspan="2">Detection</td> <td colspan="2">Localization</td></tr>
@@ -331,6 +335,8 @@ python test.py --obj bottle --shot 2 --stn_mode rotation_scale
 <td class='x22' x:fmla="=AVERAGE(E1:E15)"><b>96.2</b></td>
  </tr></table>
 </div>
+
+Results of few-shot anomaly detection and localization with k=8:
 
 <div style="text-align: center;">
 <table>
@@ -450,4 +456,5 @@ python test.py --obj bottle --shot 2 --stn_mode rotation_scale
  </tr></table>
 </div>
 
-<center><img src="figures/results.png "width="50%"></center>
+### Visualization Results
+<center><img src="figures/results.png "width="60%"></center>
