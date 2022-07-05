@@ -11,7 +11,7 @@ This is an official implementation of “Registration based Few-Shot Anomaly Det
 }
 ```
 
-<center><img src="figures/intro_final.png "width="60%"></center>
+<center><img src="figures/intro_final.pdf "width="60%"></center>
 
 **Abstract**:  This paper considers few-shot anomaly detection (FSAD), a practical yet under-studied setting for anomaly detection (AD), where only a limited number of normal images are provided for each category at training. So far, existing FSAD studies follow the one-model-per-category learning paradigm used for standard AD, and the inter-category commonality has not been explored. Inspired by how humans detect anomalies, i.e., comparing an image in question to normal images, we here leverage registration, an image alignment task that is inherently generalizable across categories, as the proxy task, to train a category-agnostic anomaly detection model. During testing, the anomalies are identified by comparing the registered features of the test image and its corresponding support (normal) images. As far as we know, this is the first FSAD method that trains a single generalizable model and requires no re-training or parameter fine-tuning for new categories. Experimental results have shown that the proposed method outperforms the state-of-the-art FSAD methods by 3%-8% in AUC on the MVTec and MPDD benchmarks.
 
@@ -39,38 +39,38 @@ and unzip the dataset.
     We hope the followers could use these support datasets to make a fair comparison between different methods.
 3. Download the pre-train models [here](https://drive.google.com/file/d/1u-e9Dx1aqNZeIWVKL6NXrHCXtY6zbgvm/view?usp=sharing)
 and unzip the checkpoint files.
-and unzip the dataset.
     ```
     tar -xvf save_checkpoints.tar
     ```
-After the preparation work, the whole project should has the following structure:
+  After the preparation work, the whole project should has the following structure:
 
-```
-./RegAD
-├── README.md
-├── train.py                        # training code
-├── test.py                         # testing code
-├── MVTec                           # MVTec dataset files
-│   ├── bottle
-│   ├── cable
-│   ├── ...                  
-│   └── zippper
-├── support_set                     # MVTec support dataset files
-│   ├── 2
-│   ├── 4                 
-│   └── 8
-├── models                          # models and backbones
-│   ├── stn.py  
-│   └── siamese.py
-├── losses                          # losses
-│   └── norm_loss.py  
-├── datasets                        # dataset                      
-│   └── mvtec.py
-├── save_checkpoints                # model checkpoint files                  
-└── utils                           # utils
-    ├── utils.py
-    └── funcs.py
-```
+  ```
+  ./RegAD
+  ├── README.md
+  ├── train.py                        # training code
+  ├── test.py                         # testing code
+  ├── MVTec                           # MVTec dataset files
+  │   ├── bottle
+  │   ├── cable
+  │   ├── ...                  
+  │   └── zippper
+  ├── support_set                     # MVTec support dataset files
+  │   ├── 2
+  │   ├── 4                 
+  │   └── 8
+  ├── models                          # models and backbones
+  │   ├── stn.py  
+  │   └── siamese.py
+  ├── losses                          # losses
+  │   └── norm_loss.py  
+  ├── datasets                        # dataset                      
+  │   └── mvtec.py
+  ├── save_checkpoints                # model checkpoint files                  
+  └── utils                           # utils
+      ├── utils.py
+      └── funcs.py
+  ```
+
 ### Quick Start
 
 ```python
@@ -450,4 +450,4 @@ python test.py --obj bottle --shot 2 --stn_mode rotation_scale
  </tr></table>
 </div>
 
-<center><img src="figures/results.png "width="60%"></center>
+<center><img src="figures/results.pdf "width="60%"></center>
