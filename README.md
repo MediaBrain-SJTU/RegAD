@@ -42,34 +42,35 @@ and unzip the checkpoint files.
     ```
     tar -xvf save_checkpoints.tar
     ```
-After the preparation work, the whole project should has the following structure:
+  After the preparation work, the whole project should has the following structure:
 
-```
-./RegAD
-├── README.md
-├── train.py                        # training code
-├── test.py                         # testing code
-├── MVTec                           # MVTec dataset files
-│   ├── bottle
-│   ├── cable
-│   ├── ...                  
-│   └── zippper
-├── support_set                     # MVTec support dataset files
-│   ├── 2
-│   ├── 4                 
-│   └── 8
-├── models                          # models and backbones
-│   ├── stn.py  
-│   └── siamese.py
-├── losses                          # losses
-│   └── norm_loss.py  
-├── datasets                        # dataset                      
-│   └── mvtec.py
-├── save_checkpoints                # model checkpoint files                  
-└── utils                           # utils
-    ├── utils.py
-    └── funcs.py
-```
+  ```
+  ./RegAD
+  ├── README.md
+  ├── train.py                        # training code
+  ├── test.py                         # testing code
+  ├── MVTec                           # MVTec dataset files
+  │   ├── bottle
+  │   ├── cable
+  │   ├── ...                  
+  │   └── zippper
+  ├── support_set                     # MVTec support dataset files
+  │   ├── 2
+  │   ├── 4                 
+  │   └── 8
+  ├── models                          # models and backbones
+  │   ├── stn.py  
+  │   └── siamese.py
+  ├── losses                          # losses
+  │   └── norm_loss.py  
+  ├── datasets                        # dataset                      
+  │   └── mvtec.py
+  ├── save_checkpoints                # model checkpoint files                  
+  └── utils                           # utils
+      ├── utils.py
+      └── funcs.py
+  ```
+
 ### Quick Start
 
 ```python
