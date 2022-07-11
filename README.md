@@ -460,7 +460,7 @@ Results of few-shot anomaly detection and localization with k=8:
  </tr></table>
 </div>
 
-## Acknowledgement
+## Visualization
 <center><img src="figures/results.png "width="60%"></center>
 
 ## Acknowledgement
