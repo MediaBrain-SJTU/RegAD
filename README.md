@@ -97,6 +97,8 @@ Then you can run the evaluation using:
 python test.py --obj bottle --shot 2 --stn_mode rotation_scale
 ```
 
+## Results
+
 Results of few-shot anomaly detection and localization with k=2:
 
 <div style="text-align: center;">
@@ -458,8 +460,8 @@ Results of few-shot anomaly detection and localization with k=8:
  </tr></table>
 </div>
 
-### Visualization Results
+## Acknowledgement
 <center><img src="figures/results.png "width="60%"></center>
 
-### Acknowledgments
+## Acknowledgement
 We borrow some codes from [SimSiam](https://github.com/facebookresearch/simsiam), [STN](https://github.com/YotYot/CalibrationNet/blob/2446a3bcb7ff4aa1e492adcde62a4b10a33635b4/models/configurable_stn_no_stereo.py) and [PaDiM](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
