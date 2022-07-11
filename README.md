@@ -462,4 +462,4 @@ Results of few-shot anomaly detection and localization with k=8:
 <center><img src="figures/results.png "width="60%"></center>
 
 ### Acknowledgments
-We borrow some codes from [SimSiam](https://github.com/facebookresearch/simsiam), [STN](https://github.com/YotYot/CalibrationNet/blob/2446a3bcb7ff4aa1e492adcde62a4b10a33635b4/models/configurable_stn_no_stereo.py) and [PaDiM}(https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
+We borrow some codes from [SimSiam](https://github.com/facebookresearch/simsiam), [STN](https://github.com/YotYot/CalibrationNet/blob/2446a3bcb7ff4aa1e492adcde62a4b10a33635b4/models/configurable_stn_no_stereo.py) and [PaDiM](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
