@@ -86,10 +86,14 @@ python test.py --obj bottle --shot 2 --stn_mode rotation_scale
 
 ## Training
 
-To train a RegAD model on the MVTec dataset on `bottle` with `k=2`, simply run:
+```python
+python train.py --obj $target-object --shot $few-shot-number --data_type mvtec --data_path ./MVTec/ --epochs 50 --batch_size 32 --lr 0.0001 --momentum 0.9 --inferences 10 --stn_mode rotation_scale 
+```
+
+For example, to train a RegAD model on the MVTec dataset on `bottle` with `k=2`, simply run:
 
 ```python
-python train.py --obj bottle --shot 2 --stn_mode rotation_scale 
+python train.py --obj bottle --shot 2 --data_type mvtec --data_path ./MVTec/ --epochs 50 --batch_size 32 --lr 0.0001 --momentum 0.9 --inferences 10 --stn_mode rotation_scale 
 ```
 
 Then you can run the evaluation using:
