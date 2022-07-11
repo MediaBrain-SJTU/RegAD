@@ -1,6 +1,6 @@
 # Registration based Few-Shot Anomaly Detection
 
-This is an official implementation of “Registration based Few-Shot Anomaly Detection” (RegAD) with PyTorch, accepted by ECCV 2022.
+This is an official implementation of “Registration based Few-Shot Anomaly Detection” (RegAD) with PyTorch, accepted by ECCV 2022 (oral).
 
 ```
 @inproceedings{huang2022regad,
@@ -14,6 +14,8 @@ This is an official implementation of “Registration based Few-Shot Anomaly Det
 <center><img src="figures/intro_final.png "width="80%"></center>
 
 **Abstract**:  This paper considers few-shot anomaly detection (FSAD), a practical yet under-studied setting for anomaly detection (AD), where only a limited number of normal images are provided for each category at training. So far, existing FSAD studies follow the one-model-per-category learning paradigm used for standard AD, and the inter-category commonality has not been explored. Inspired by how humans detect anomalies, i.e., comparing an image in question to normal images, we here leverage registration, an image alignment task that is inherently generalizable across categories, as the proxy task, to train a category-agnostic anomaly detection model. During testing, the anomalies are identified by comparing the registered features of the test image and its corresponding support (normal) images. As far as we know, this is the first FSAD method that trains a single generalizable model and requires no re-training or parameter fine-tuning for new categories. 
+
+**Keywords**: Anomaly Detection, Few-Shot Learning, Registration
 
 ## Get Started
 
@@ -47,26 +49,26 @@ and unzip the checkpoint files.
   ```
   ./RegAD
   ├── README.md
-  ├── train.py                        # training code
-  ├── test.py                         # testing code
-  ├── MVTec                           # MVTec dataset files
+  ├── train.py                                  # training code
+  ├── test.py                                   # testing code
+  ├── MVTec                                     # MVTec dataset files
   │   ├── bottle
   │   ├── cable
   │   ├── ...                  
   │   └── zippper
-  ├── support_set                     # MVTec support dataset files
+  ├── support_set                               # MVTec support dataset files
   │   ├── 2
   │   ├── 4                 
   │   └── 8
-  ├── models                          # models and backbones
+  ├── models                                    # models and backbones
   │   ├── stn.py  
   │   └── siamese.py
-  ├── losses                          # losses
+  ├── losses                                    # losses
   │   └── norm_loss.py  
-  ├── datasets                        # dataset                      
+  ├── datasets                                  # dataset                      
   │   └── mvtec.py
-  ├── save_checkpoints                # model checkpoint files                  
-  └── utils                           # utils
+  ├── save_checkpoints                          # model checkpoint files                  
+  └── utils                                     # utils
       ├── utils.py
       └── funcs.py
   ```
@@ -458,3 +460,6 @@ Results of few-shot anomaly detection and localization with k=8:
 
 ### Visualization Results
 <center><img src="figures/results.png "width="60%"></center>
+
+### Acknowledgments
+We borrow some codes from [SimSiam](https://github.com/facebookresearch/simsiam), [STN](https://github.com/YotYot/CalibrationNet/blob/2446a3bcb7ff4aa1e492adcde62a4b10a33635b4/models/configurable_stn_no_stereo.py) and [PaDiM}(https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master)
