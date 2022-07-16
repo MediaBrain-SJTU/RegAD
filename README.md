@@ -44,7 +44,7 @@ and unzip the checkpoint files.
     ```
     tar -xvf save_checkpoints.tar
     ```
-  After the preparation work, the whole project should has the following structure:
+  After the preparation work, the whole project should have the following structure:
 
   ```
   ./RegAD
