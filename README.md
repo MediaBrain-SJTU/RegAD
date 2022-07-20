@@ -1,6 +1,8 @@
 # Registration based Few-Shot Anomaly Detection
 
-This is an official implementation of “Registration based Few-Shot Anomaly Detection” (RegAD) with PyTorch, accepted by ECCV 2022 (oral).
+This is an official implementation of “Registration based Few-Shot Anomaly Detection” (RegAD) with PyTorch, accepted by ECCV 2022 (Oral).
+
+[Paper Link](https://arxiv.org/abs/2207.07361)
 
 ```
 @inproceedings{huang2022regad,
