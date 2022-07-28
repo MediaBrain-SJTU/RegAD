@@ -41,7 +41,7 @@ and unzip the dataset.
     tar -xvf support_set.tar
     ```
     We hope the followers could use these support datasets to make a fair comparison between different methods.
-3. Download the pre-train models [here](https://drive.google.com/file/d/1nEnM1xNIZXUrUIPTYf7t11ndTJhChV5h/view?usp=sharing)
+3. Download the pre-train models [here](https://drive.google.com/file/d/1guZBh40btPRmxcnY_lud88V1NoT-eWWX/view?usp=sharing)
 and unzip the checkpoint files.
     ```
     tar -xvf save_checkpoints.tar
