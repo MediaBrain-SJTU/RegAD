@@ -35,13 +35,13 @@ This is an official implementation of “Registration based Few-Shot Anomaly Det
 ### Files Preparation
 
 1. Download the MVTec dataset [here](https://www.mvtec.com/company/research/datasets/mvtec-ad). 
-2. Download the support dataset for few-shot anomaly detection [here](https://drive.google.com/file/d/161zBrv_-E01M8AdzEG0IAI5hae5NUGvO/view?usp=sharing) 
+2. Download the support dataset for few-shot anomaly detection on [Google Drive](https://drive.google.com/file/d/1AZcc77cmDfkWA8f8cs-j-CUuFFQ7tPoK/view?usp=sharing) or [Baidu Disk](https://pan.baidu.com/s/1GZAqtscOaPliaFCiSKlViA) (i9rx)
 and unzip the dataset.
     ```
     tar -xvf support_set.tar
     ```
     We hope the followers could use these support datasets to make a fair comparison between different methods.
-3. Download the pre-train models [here](https://drive.google.com/file/d/1guZBh40btPRmxcnY_lud88V1NoT-eWWX/view?usp=sharing)
+3. Download the pre-train models on [Google Drive](https://drive.google.com/file/d/1guZBh40btPRmxcnY_lud88V1NoT-eWWX/view?usp=sharing) or [Baidu Disk](https://pan.baidu.com/s/1w7-6zicbZA6ysHMSpTHNhg) (4qyo)
 and unzip the checkpoint files.
     ```
     tar -xvf save_checkpoints.tar
