@@ -36,7 +36,7 @@ This is an official implementation of “Registration based Few-Shot Anomaly Det
 
 1. Download the MVTec dataset [here](https://www.mvtec.com/company/research/datasets/mvtec-ad). 
 2. Download the support dataset for few-shot anomaly detection on [Google Drive](https://drive.google.com/file/d/1AZcc77cmDfkWA8f8cs-j-CUuFFQ7tPoK/view?usp=sharing) or [Baidu Disk](https://pan.baidu.com/s/1GZAqtscOaPliaFCiSKlViA) (i9rx)
-and unzip the dataset.
+and unzip the dataset. For those who have problem downloading the support set, please optional download categories of capsule and grid on [Baidu Disk](https://pan.baidu.com/s/1fFwAB__bV0ja38B4w3JnXQ) (pll9) and [Baidu Disk](https://pan.baidu.com/s/1_--hXPPnlv3Tv7HHd4HRZQ) (ns0n).
     ```
     tar -xvf support_set.tar
     ```
